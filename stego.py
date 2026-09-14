@@ -1,14 +1,6 @@
 """
-stego_gui.py — LSB Steganography Studio (GUI version)
-
-A simple point-and-click app for hiding and extracting secret files inside
-images, plus a built-in visual analysis tool.
-
-Requires: pillow, numpy, matplotlib  (tkinter ships with Python already)
-    pip install pillow numpy matplotlib
-
-Run:
-    python stego_gui.py
+Stego Tool
+for assignment
 """
 
 import os
@@ -20,13 +12,11 @@ from tkinter import ttk, filedialog, messagebox
 from PIL import Image, ImageTk
 import numpy as np
 import matplotlib
-matplotlib.use("Agg")  # render off-screen, we display via PIL/Tkinter
+matplotlib.use("Agg")  
 import matplotlib.pyplot as plt
 
 
-# =====================================================================
-# CORE STEGANOGRAPHY LOGIC (same LSB technique as before)
-# =====================================================================
+
 MAGIC = b"STG1"
 
 
